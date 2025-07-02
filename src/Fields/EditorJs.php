@@ -4,7 +4,8 @@ declare(strict_types=1);
 
 namespace Sckatik\MoonshineEditorJs\Fields;
 
-use MoonShine\Fields\Textarea;
+
+use MoonShine\UI\Fields\Textarea;
 
 class EditorJs extends Textarea
 {

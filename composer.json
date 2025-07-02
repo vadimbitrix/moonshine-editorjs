@@ -26,7 +26,7 @@
         "ext-dom": "*",
         "codex-team/editor.js": "*",
         "guzzlehttp/guzzle": "^7.0",
-        "illuminate/events": "^10.0 || ^11.0",
+        "illuminate/events": "^10.0 || ^11.0 || ^12.0",
         "spatie/image": "^3.0",
         "ext-fileinfo": "*"
     },
@@ -42,9 +42,6 @@
             "Sckatik\\MoonshineEditorJs\\": "src/"
         }
     },
-    "conflict": {
-        "moonshine/moonshine": "<1.52"
-    },
     "scripts": {
         "test": "vendor/bin/phpunit",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
@@ -53,6 +50,9 @@
         "laravel": {
             "providers": [
                 "Sckatik\\MoonshineEditorJs\\Providers\\MoonshineEditorJsServiceProvider"
+            ],
+            "vite": [
+                "vendor/moonshine-editorjs/manifest.json"
             ]
         }
     }
